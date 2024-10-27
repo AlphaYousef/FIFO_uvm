@@ -1,0 +1,236 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /coverage_pkg/FIFO_coverage/cvr_gp               100.0%        100    Covered              
+    covered/total bins:                                    60         60                      
+    missing/total bins:                                     0         60                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cvr_gp::cp_wr_en                        100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin wr_en_0                                      3081          1    Covered              
+        bin wr_en_1                                      7023          1    Covered              
+    Coverpoint cvr_gp::cp_rd_en                        100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin rd_en_0                                      7019          1    Covered              
+        bin rd_en_1                                      3085          1    Covered              
+    Coverpoint cvr_gp::cp_underflow                    100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin underflow_0                                  9960          1    Covered              
+        bin underflow_1                                   144          1    Covered              
+    Coverpoint cvr_gp::cp_overflow                     100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin overflow_0                                   6635          1    Covered              
+        bin overflow_1                                   3469          1    Covered              
+    Coverpoint cvr_gp::cp_empty                        100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin empty_0                                      9932          1    Covered              
+        bin empty_1                                       172          1    Covered              
+    Coverpoint cvr_gp::cp_full                         100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin full_0                                       5193          1    Covered              
+        bin full_1                                       4911          1    Covered              
+    Coverpoint cvr_gp::#seq_item_cov.wr_en__0#         100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                      3081          1    Covered              
+        bin auto[1]                                      7023          1    Covered              
+    Coverpoint cvr_gp::#seq_item_cov.rd_en__1#         100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                      7019          1    Covered              
+        bin auto[1]                                      3085          1    Covered              
+    Coverpoint cvr_gp::#seq_item_cov.almostempty__2# 
+                                                       100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                      9848          1    Covered              
+        bin auto[1]                                       256          1    Covered              
+    Coverpoint cvr_gp::#seq_item_cov.almostfull__3# 
+                                                       100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                      7031          1    Covered              
+        bin auto[1]                                      3073          1    Covered              
+    Cross cvr_gp::cross_cvr_full                       100.0%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                         100.0%        100                      
+        bin <wr_en_0,rd_en_0,full_0>                     1116          1    Covered              
+        bin <wr_en_0,rd_en_1,full_0>                      975          1    Covered              
+        bin <wr_en_1,rd_en_0,full_0>                      992          1    Covered              
+        bin <wr_en_1,rd_en_1,full_0>                     2110          1    Covered              
+        bin <wr_en_0,rd_en_0,full_1>                      990          1    Covered              
+        bin <wr_en_1,rd_en_0,full_1>                     3921          1    Covered              
+        illegal_bin ignore_full_invalid                     0               ZERO                 
+    Cross cvr_gp::cross_cvr_almostfull                 100.0%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                         100.0%        100                      
+        bin <wr_en_0,rd_en_0,auto[0]>                    1459          1    Covered              
+        bin <wr_en_0,rd_en_0,auto[1]>                     647          1    Covered              
+        bin <wr_en_1,rd_en_0,auto[0]>                    4580          1    Covered              
+        bin <wr_en_1,rd_en_0,auto[1]>                     333          1    Covered              
+        bin <wr_en_0,rd_en_1,auto[0]>                     559          1    Covered              
+        bin <wr_en_0,rd_en_1,auto[1]>                     416          1    Covered              
+        bin <wr_en_1,rd_en_1,auto[0]>                     433          1    Covered              
+        bin <wr_en_1,rd_en_1,auto[1]>                    1677          1    Covered              
+    Cross cvr_gp::cross_cvr_empty                      100.0%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                         100.0%        100                      
+        bin <wr_en_0,rd_en_0,empty_0>                    2070          1    Covered              
+        bin <wr_en_1,rd_en_0,empty_0>                    4913          1    Covered              
+        bin <wr_en_0,rd_en_1,empty_0>                     839          1    Covered              
+        bin <wr_en_1,rd_en_1,empty_0>                    2110          1    Covered              
+        bin <wr_en_0,rd_en_0,empty_1>                      36          1    Covered              
+        bin <wr_en_0,rd_en_1,empty_1>                     136          1    Covered              
+        illegal_bin ignore_empty_invalid                    0               ZERO                 
+    Cross cvr_gp::cross_cvr_almostempty                100.0%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                         100.0%        100                      
+        bin <auto[0],auto[0],auto[0]>                    2043          1    Covered              
+        bin <auto[1],auto[0],auto[0]>                    4828          1    Covered              
+        bin <auto[0],auto[1],auto[0]>                     955          1    Covered              
+        bin <auto[1],auto[1],auto[0]>                    2022          1    Covered              
+        bin <auto[0],auto[0],auto[1]>                      63          1    Covered              
+        bin <auto[1],auto[0],auto[1]>                      85          1    Covered              
+        bin <auto[0],auto[1],auto[1]>                      20          1    Covered              
+        bin <auto[1],auto[1],auto[1]>                      88          1    Covered              
+    Cross cvr_gp::cross_cvr_overflow                   100.0%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                         100.0%        100                      
+        bin <wr_en_0,rd_en_0,overflow_0>                 2106          1    Covered              
+        bin <wr_en_1,rd_en_0,overflow_0>                 2432          1    Covered              
+        bin <wr_en_0,rd_en_1,overflow_0>                  975          1    Covered              
+        bin <wr_en_1,rd_en_1,overflow_0>                 1122          1    Covered              
+        bin <wr_en_1,rd_en_0,overflow_1>                 2481          1    Covered              
+        bin <wr_en_1,rd_en_1,overflow_1>                  988          1    Covered              
+        illegal_bin ignore_overflow_invalid                 0               ZERO                 
+    Cross cvr_gp::cross_cvr_underflow                  100.0%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                         100.0%        100                      
+        bin <wr_en_0,rd_en_0,underflow_0>                2106          1    Covered              
+        bin <wr_en_0,rd_en_1,underflow_0>                 866          1    Covered              
+        bin <wr_en_1,rd_en_0,underflow_0>                4913          1    Covered              
+        bin <wr_en_1,rd_en_1,underflow_0>                2075          1    Covered              
+        bin <wr_en_0,rd_en_1,underflow_1>                 109          1    Covered              
+        bin <wr_en_1,rd_en_1,underflow_1>                  35          1    Covered              
+        illegal_bin ignore_underflow_invalid                0               ZERO                 
+ CLASS FIFO_coverage
+
+TOTAL COVERGROUP COVERAGE: 100.0%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+---------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Count Status    
+                                         Unit   UnitType                                      
+---------------------------------------------------------------------------------------------
+/top/DUT/FIFO_sva_inst/cover__count_decrement_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(59)
+                                                                                861 Covered   
+/top/DUT/FIFO_sva_inst/cover__count_increment_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(51)
+                                                                               2411 Covered   
+/top/DUT/FIFO_sva_inst/cover__underflow_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(43)
+                                                                                149 Covered   
+/top/DUT/FIFO_sva_inst/cover__overflow_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(35)
+                                                                               3441 Covered   
+/top/DUT/FIFO_sva_inst/cover__almostempty_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(28)
+                                                                                251 Covered   
+/top/DUT/FIFO_sva_inst/cover__almostfull_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(21)
+                                                                               3041 Covered   
+/top/DUT/FIFO_sva_inst/cover__empty_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(14)
+                                                                                367 Covered   
+/top/DUT/FIFO_sva_inst/cover__full_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(7)
+                                                                               4875 Covered   
+/top/sva/cover__count_decrement_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(59)
+                                                                                861 Covered   
+/top/sva/cover__count_increment_assertion 
+                                         FIFO_assertions Verilog  SVA  FIFO_assertions.sv(51)
+                                                                               2411 Covered   
+/top/sva/cover__underflow_assertion      FIFO_assertions Verilog  SVA  FIFO_assertions.sv(43)
+                                                                                149 Covered   
+/top/sva/cover__overflow_assertion       FIFO_assertions Verilog  SVA  FIFO_assertions.sv(35)
+                                                                               3441 Covered   
+/top/sva/cover__almostempty_assertion    FIFO_assertions Verilog  SVA  FIFO_assertions.sv(28)
+                                                                                251 Covered   
+/top/sva/cover__almostfull_assertion     FIFO_assertions Verilog  SVA  FIFO_assertions.sv(21)
+                                                                               3041 Covered   
+/top/sva/cover__empty_assertion          FIFO_assertions Verilog  SVA  FIFO_assertions.sv(14)
+                                                                                367 Covered   
+/top/sva/cover__full_assertion           FIFO_assertions Verilog  SVA  FIFO_assertions.sv(7)
+                                                                               4875 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 16
+
+ASSERTION RESULTS:
+-------------------------------------------------------
+Name                 File(Line)           Failure Pass 
+                                          Count   Count 
+-------------------------------------------------------
+/top/DUT/FIFO_sva_inst/assert__count_decrement_assertion
+                     FIFO_assertions.sv(58)       0     1
+/top/DUT/FIFO_sva_inst/assert__count_increment_assertion
+                     FIFO_assertions.sv(50)       0     1
+/top/DUT/FIFO_sva_inst/assert__underflow_assertion
+                     FIFO_assertions.sv(42)       0     1
+/top/DUT/FIFO_sva_inst/assert__overflow_assertion
+                     FIFO_assertions.sv(34)       0     1
+/top/DUT/FIFO_sva_inst/assert__almostempty_assertion
+                     FIFO_assertions.sv(27)       0     1
+/top/DUT/FIFO_sva_inst/assert__almostfull_assertion
+                     FIFO_assertions.sv(20)       0     1
+/top/DUT/FIFO_sva_inst/assert__empty_assertion
+                     FIFO_assertions.sv(13)       0     1
+/top/DUT/FIFO_sva_inst/assert__full_assertion
+                     FIFO_assertions.sv(6)       0     1
+/top/sva/assert__count_decrement_assertion
+                     FIFO_assertions.sv(58)       0     1
+/top/sva/assert__count_increment_assertion
+                     FIFO_assertions.sv(50)       0     1
+/top/sva/assert__underflow_assertion
+                     FIFO_assertions.sv(42)       0     1
+/top/sva/assert__overflow_assertion
+                     FIFO_assertions.sv(34)       0     1
+/top/sva/assert__almostempty_assertion
+                     FIFO_assertions.sv(27)       0     1
+/top/sva/assert__almostfull_assertion
+                     FIFO_assertions.sv(20)       0     1
+/top/sva/assert__empty_assertion
+                     FIFO_assertions.sv(13)       0     1
+/top/sva/assert__full_assertion
+                     FIFO_assertions.sv(6)       0     1
+/FIFO_seq_pkg/write_sequence/body/#ublk#225236087#34/immed__37
+                     FIFO_sequence.sv(37)       0     1
+/FIFO_seq_pkg/read_sequence/body/#ublk#225236087#53/immed__56
+                     FIFO_sequence.sv(56)       0     1
+/FIFO_seq_pkg/read_write_sequence/body/#ublk#225236087#72/immed__75
+                     FIFO_sequence.sv(75)       0     1
